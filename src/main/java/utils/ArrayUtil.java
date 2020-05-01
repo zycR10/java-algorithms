@@ -1,5 +1,6 @@
 package utils;
 
+import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -21,11 +22,14 @@ public class ArrayUtil {
     }
 
     public static void print(int[] nums) {
-        if (nums == null) {
+        if (Objects.isNull(nums)) {
             return;
         }
+        StringBuilder sb = new StringBuilder();
         for (int num : nums) {
-            System.out.print(num + ",");
+            sb.append(num).append(",");
         }
+        sb.deleteCharAt(sb.length() - 1);
+        System.out.println(sb);
     }
 }

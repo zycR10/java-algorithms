@@ -6,18 +6,18 @@ import java.util.Objects;
 
 /**
  * @Author: Zuo Yichen
- * @Date: 2020/4/29 16:51
+ * @Date: 2020/4/30 10:26
  */
-public class BubbleSort extends Algorithm {
-
+public class InsertSort extends Algorithm {
+    @Override
     protected void sort(int[] nums) {
         if (Objects.isNull(nums)) {
             return;
         }
         for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (nums[i] > nums[j]) {
-                    swap(nums, i, j);
+            for (int j = i; j > 0 ; j--) {
+                if (nums[j] < nums[j - 1]) {
+                    swap(nums, j, j - 1);
                 }
             }
         }

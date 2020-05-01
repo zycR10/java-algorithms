@@ -8,4 +8,13 @@ import com.sun.istack.internal.NotNull;
  */
 public abstract class Algorithm {
     protected abstract void sort(@NotNull int[] nums);
+
+    protected void swap(int[] nums, int var1, int var2) {
+        if (var1 == var2) {
+            return;
+        }
+        int temp = nums[var1];
+        nums[var1] = nums[var2];
+        nums[var2] = temp;
+    }
 }
