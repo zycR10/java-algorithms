@@ -27,12 +27,12 @@ public class QuickSort extends Algorithm {
         int rightIndex = right;
         int pivot = nums[emptyIndex];
         while (leftIndex < rightIndex) {
-            while (leftIndex < rightIndex && nums[rightIndex] > pivot) {
+            while (leftIndex < rightIndex && nums[rightIndex] >= pivot) {
                 rightIndex--;
             }
             swap(nums, rightIndex, emptyIndex);
             emptyIndex = rightIndex;
-            while (leftIndex < rightIndex && nums[leftIndex] < pivot) {
+            while (leftIndex < rightIndex && nums[leftIndex] <= pivot) {
                 leftIndex++;
             }
             swap(nums, leftIndex, emptyIndex);
