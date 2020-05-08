@@ -1,7 +1,7 @@
 package algorithms;
 
 
-import base.Algorithm;
+import base.Sort;
 
 import java.util.Objects;
 
@@ -9,7 +9,7 @@ import java.util.Objects;
  * @Author: Zuo Yichen
  * @Date: 2020/4/30 10:37
  */
-public class SelectSort extends Algorithm {
+public class SelectSort extends Sort {
     @Override
     protected void sort(int[] nums) {
         if (Objects.isNull(nums)) {

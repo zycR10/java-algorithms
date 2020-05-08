@@ -1,7 +1,7 @@
 package algorithms;
 
-import base.Algorithm;
 import base.Bucket;
+import base.Sort;
 import utils.ArrayUtil;
 
 import java.util.Objects;
@@ -10,7 +10,7 @@ import java.util.Objects;
  * @Author: Zuo Yichen
  * @Date: 2020/5/3 16:00
  */
-public class BucketSort extends Algorithm {
+public class BucketSort extends Sort {
     @Override
     protected void sort(int[] nums) {
         if (Objects.isNull(nums)) {

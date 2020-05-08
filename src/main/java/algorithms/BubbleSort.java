@@ -1,6 +1,7 @@
 package algorithms;
 
 import base.Algorithm;
+import base.Sort;
 
 import java.util.Objects;
 
@@ -8,7 +9,7 @@ import java.util.Objects;
  * @Author: Zuo Yichen
  * @Date: 2020/4/29 16:51
  */
-public class BubbleSort extends Algorithm {
+public class BubbleSort extends Sort {
 
     protected void sort(int[] nums) {
         if (Objects.isNull(nums)) {

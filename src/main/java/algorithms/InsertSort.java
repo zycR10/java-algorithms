@@ -1,6 +1,6 @@
 package algorithms;
 
-import base.Algorithm;
+import base.Sort;
 
 import java.util.Objects;
 
@@ -8,7 +8,7 @@ import java.util.Objects;
  * @Author: Zuo Yichen
  * @Date: 2020/4/30 10:26
  */
-public class InsertSort extends Algorithm {
+public class InsertSort extends Sort {
     @Override
     protected void sort(int[] nums) {
         if (Objects.isNull(nums)) {

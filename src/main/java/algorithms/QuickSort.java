@@ -1,7 +1,6 @@
 package algorithms;
 
-import base.Algorithm;
-import com.sun.prism.sw.SWPipeline;
+import base.Sort;
 
 import java.util.Objects;
 
@@ -9,7 +8,7 @@ import java.util.Objects;
  * @Author: Zuo Yichen
  * @Date: 2020/5/2 15:41
  */
-public class QuickSort extends Algorithm {
+public class QuickSort extends Sort {
     @Override
     protected void sort(int[] nums) {
         if (Objects.isNull(nums)) {
